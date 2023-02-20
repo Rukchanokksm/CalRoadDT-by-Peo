@@ -128,20 +128,20 @@ function result() {
         return GasBw220i;
       }
       const GasBw220i = gasBmw220i();
-      
+    let valueBath = 35;  
     
 
     if (selected === 'toyota'){ //toyota -
        // console.log('yes');
-        document.getElementById('result').innerHTML = (Gasats * inPutNumber).toFixed(2);
+        document.getElementById('result').innerHTML = (inPutNumber / Gasats * valueBath + Gasats).toFixed(2);
     } else if(selected === 'honda'){
        // console.log('yes honda');
-        document.getElementById('result').innerHTML = (GashndCt * inPutNumber).toFixed(2);
+        document.getElementById('result').innerHTML = (inPutNumber / GashndCt * valueBath + Gasats).toFixed(2);
     } else if(selected === 'mazda'){
         //console.log('yes mazda');
-        document.getElementById('result').innerHTML = (GasMz3 * inPutNumber).toFixed(2);
+        document.getElementById('result').innerHTML = (inPutNumber / GasMz3 * valueBath + GasMz3).toFixed(2);
     } else if(selected === 'bmw'){
         //console.log('yes bmw');
-        document.getElementById('result').innerHTML = (GasBw220i * inPutNumber).toFixed(2);
+        document.getElementById('result').innerHTML = (inPutNumber / GasBw220i * valueBath + GasBw220i).toFixed(2);
     }
 }
