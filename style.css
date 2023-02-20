@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: 30vh 30vh 10vh 30vh;
+    background-color: #0096FF;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px ;
+}
+.container h1{
+    margin-left: 10px;
+}
+.container select{
+    margin-top: 5px;
+}
+
+/*result*/
+.result {
+    text-align: center;
+    
+}
+
+.result input{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.result p{
+    font-size: 5rem;
+}

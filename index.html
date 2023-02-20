@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cel price gas</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+    <!--Solution-->
+    <section class="container">
+        <div>
+            <select name="band-car" id="band-car-select">
+                <option value="">--Select your Car--</option>
+                <option value="toyota">toyota</option>
+                <option value="honda">honda</option>
+                <option value="mazda">mazda</option>
+                <option value="bmw">bmw</option>
+            </select>
+        </div>
+        
+        <h1>Use gas about 15 Km. per 1 lit. Won to travel <span><input type="number" id="number" name="number" required
+            minlength="4" maxlength="8" size="10"></span> Km. How much  to pay for gas.</h1>
+    </section>
+
+    <!--Result-->
+    <section class="result">
+        <!--
+            <input type="submit" value="submit" onclick='result(document.getElementById("number").value)'>
+        -->
+        <input type="submit" value="submit" onclick='result()'>
+        <p>= <span id="result"></span> bath</p>
+
+        <p></p>
+        
+    </section>
+    <script src="/style.js"></script>
+</body>
+    
+</html>
