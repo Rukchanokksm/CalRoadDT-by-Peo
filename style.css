@@ -1,35 +1,25 @@
-* {
-    padding: 0;
-    margin: 0;
+body {
+    background-image: url(/image/road-bg.jpg);
+    background-size: cover;
+    background-position: top;
 }
-
-.container {
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    margin: 30vh 30vh 10vh 30vh;
-    background-color: #0096FF;
-    padding: 20px;
-    border-radius: 10px;
-    border: solid 1px ;
+/*Main solution*/
+.solution {
+    margin-top: 15vh;
 }
-.container h1{
-    margin-left: 10px;
-}
-.container select{
-    margin-top: 5px;
-}
-
-/*result*/
-.result {
-    text-align: center;
-    
-}
-
-.result input{
-    padding: 10px;
-    margin-bottom: 20px;
-}
-.result p{
-    font-size: 5rem;
-}
+/*footer*/
+section.footer li:nth-child(1) i {
+    color: #1877f2;
+  }
+section.footer li:nth-child(2) i {
+    color: #00C300;
+  }
+section.footer li:nth-child(3) i {
+    color: #1DA1F2;
+  }
+section.footer li:nth-child(4) i {
+    color: #181717;
+  }
+section.footer li i:hover {
+    color: #63C9FF;
+  }

@@ -6,37 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cel price gas</title>
     <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 <body>
-    
-    <!--Solution-->
-    <section class="container">
-        <div>
-            <select name="band-car" id="band-car-select">
-                <option value="">--Select your Car--</option>
-                <option value="toyota">toyota</option>
-                <option value="honda">honda</option>
-                <option value="mazda">mazda</option>
-                <option value="bmw">bmw</option>
-            </select>
+    <nav class="bg-secondary" style="height: 60px;">
+        <div class="container-sm pt-3">
+            <ul class="d-flex justify-content-end gap-5 list-unstyled">
+                <li class="">
+                    <a class="text-muted" href="#">HOME</a>
+                </li>
+                <li class="">
+                    <a class="text-muted" href="#">About me</a>
+                </li>
+                <li class="">
+                    <a class="text-muted" href="#">contract</a>
+                </li>
+            </ul>
         </div>
-        
-        <h1>Use gas about 15 Km. per 1 lit. Won to travel <span><input type="number" id="number" name="number" required
-            minlength="4" maxlength="8" size="10"></span> Km. How much  to pay for gas.</h1>
+    </nav>
+    <!--Solution-->
+    <section class="solution container-sm text-center p-0 bg-secondary border border-dark rounded">
+        <div class="row">
+            <div class="container-sm pt-2">
+                <h1>โปรแกรมคำนวณราคานํ้ามันต่อระยะทาง</h1>
+            </div>
+            <div class="container col-6 mt-5">
+                <select class="fs-5 text-center" name="band-car" id="band-car-select" style="max-width: 15rem; width: 100%;">
+                    <option value="plzselect">--Select your Car--</option>
+                    <option value="toyota">toyota</option>
+                    <option value="honda">honda</option>
+                    <option value="mazda">mazda</option>
+                    <option value="bmw">bmw</option>
+                </select>
+            </div>
+            
+            <h1 class="container-sm col-6 fs-3">ความเร็วเฉลี่ยที่คำนวณ 80km/h
+                <span><input class="container-sm mt-2" type="number" id="number" name="number" required
+                    minlength="4" maxlength="8" size="10" style="max-width: 20rem;" width="100%"></span> Km.</h1>
+                </div>
+                <!--Result-->
+                <div class="container-sm text-center mt-5">
+                    <input class="bg-info fs-3 " type="submit" value="คำนวณ" onclick='result()'>
+                    <div class="container-sm fs-3 mt-3">
+                        <p>ค่านํ้ามันทั้งหมด = <span class="" id="result"></span></p>
+                    </div>
+                </div>
     </section>
 
-    <!--Result-->
-    <section class="result">
-        <!--
-            <input type="submit" value="submit" onclick='result(document.getElementById("number").value)'>
-        -->
-        <input type="submit" value="submit" onclick='result()'>
-        <p>= <span id="result"></span> bath</p>
+    
 
-        <p></p>
+    <section class="footer" style="margin-top: 33vh; background-color: #565656;">
+        <div class="container mt-5 py-1">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center pt-3 mt-4 border-top">
+              <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <i class="bi bi-reception-4"></i>
+                </a>
+                <p class="mb-3 mb-md-0 text-muted text-uppercase">mini project by rukchanok(Peonix) version 1.01</p>
+              </div>
+              <ul class="col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook fs-1"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-line fs-1"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-twitter fs-1"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://github.com/peonix99" target="_blank"><i class="bi bi-github fs-1"></i></a></li>
+              </ul>
+            </footer>
+          </div>
+        
         
     </section>
     <script src="/style.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>
     
 </html>
