@@ -130,7 +130,7 @@ function result() {
       const GasBw220i = gasBmw220i();
     let valueBath = 35;  
     
-      
+    /*  
     if (selected === 'plzselect'){ //toyota -
        // console.log('yes');
         document.getElementById('result').innerHTML = "*เลือกรุ่นรถยนตร์ที่ต้องการคำนวณและกรอกระยะทาง";
@@ -146,5 +146,23 @@ function result() {
     } else if(selected === 'bmw'){
         //console.log('yes bmw');
         document.getElementById('result').innerHTML = (inPutNumber / GasBw220i * valueBath + GasBw220i).toFixed(2)+ " บาท";
+    }
+*/
+    switch (selected) {
+        case "plzselect" :
+            document.getElementById('result').innerHTML = "<span style='color:#FA345B;'>*เลือกรุ่นรถยนตร์ที่ต้องการคำนวณและกรอกระยะทาง</span>";
+            break;
+        case "toyota" :
+            document.getElementById('result').innerHTML = (inPutNumber / Gasats * valueBath + Gasats).toFixed(2)+ " บาท";
+            break;
+        case "honda":
+            document.getElementById('result').innerHTML = (inPutNumber / GashndCt * valueBath + GashndCt).toFixed(2)+ " บาท";
+            break;
+        case "mazda":
+            document.getElementById('result').innerHTML = (inPutNumber / GasMz3 * valueBath + GasMz3).toFixed(2)+ " บาท";
+            break;
+        case "bmw":
+            document.getElementById('result').innerHTML = (inPutNumber / GasBw220i * valueBath + GasBw220i).toFixed(2)+ " บาท";
+            break;
     }
 }
